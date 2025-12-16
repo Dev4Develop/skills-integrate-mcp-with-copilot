@@ -48,3 +48,5 @@ The application uses a simple data model with meaningful identifiers:
    - Grade level
 
 All data is stored in memory, which means data will be reset when the server restarts.
+
+Note: This repository now supports optional persistent storage via SQLAlchemy. Set the DATABASE_URL environment variable (e.g., `sqlite:///./dev.db` or a Postgres URL) to enable persistence. By default the app falls back to a local SQLite file `dev.db` for development.
